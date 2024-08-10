@@ -45,7 +45,7 @@ def process_image(root, file):
         print("Error: Image not found")
 
     # divide the image
-    # https://stackoverflow.com/questions/56615015/how-to-recognize-multiple-photos-on-a-white-background-using-opencv-python
+    # https://learnopencv.com/contour-detection-using-opencv-python-c/
     original = image.copy()
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (3, 3), 0)
