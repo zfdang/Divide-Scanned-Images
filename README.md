@@ -1,5 +1,7 @@
 # Divide Scanned Images
 
+自动分割扫描的图片
+
 This script divides scanned images into multiple smaller images based on specified minimum width and height.
 
 ## Usage
