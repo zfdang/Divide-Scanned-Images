@@ -27,7 +27,7 @@ This script divides scanned images into multiple smaller images based on specifi
 8. To remove all generated crop images, run the following command:
 
     ```
-    find . -name "*-Crop-*" -type f -exec rm -f {} \;
+    python run.py --clean
     ```
 
 ## Requirements
