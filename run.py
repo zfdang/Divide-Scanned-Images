@@ -66,7 +66,7 @@ def process_image(root, file):
         # cv2.rectangle(image, (x, y), (x + w, y + h), (36, 255, 12), 3)
         cropimage = original[y:y + h, x:x + w]
         cropfile = "{}-Crop-{}{}".format(file_name, image_number, file_suffix)
-        cv2.imwrite(os.path.join(root, cropfile), cropimage)
+        cv2.imwrite(os.path.join(root, cropfile), cropimage, [int(cv2.IMWRITE_JPEG_QUALITY), 95])
 
         # Modify the EXIF information of the cropfile
         if re.match(r"\d{4}$", last_part_of_root):
